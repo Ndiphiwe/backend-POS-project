@@ -1,0 +1,31 @@
+GET http://localhost:8000/users
+###
+
+
+GET http://localhost:6000/users/62135cf762a8a7339b77dacb
+
+
+###
+
+
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{
+        "username": "ndiphiwe",
+        "email": "bob@me.com",
+        "password": 12345
+      }
+
+###
+
+DELETE http://localhost:8000/products/621c96c5b3185db0ce60830d
+
+###
+
+PATCH  http://localhost:000/users/621359daed7c13a257d4ea71
+Content-Type: application/json
+
+{
+    "name": "Mr Awesom"
+}
