@@ -3,7 +3,7 @@
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose');
-const cors = require('cors')
+// const cors = require('cors')
 
 mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true})
 const db = mongoose.connection
@@ -14,7 +14,7 @@ app.get ('/',(req,res)=>{
     res.send({message:"Welcome to our Backend Project  - Ndiphiwe & Unathi"})
 })
 app.use(express.json())
-app.use(cors());
+// app.use(cors());
 
 const userRouter = require('./routes/users')
 const productRouter = require('./routes/products')
