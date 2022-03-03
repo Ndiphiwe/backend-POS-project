@@ -36,6 +36,7 @@ router.post('/', async (req, res) => {
     }
 })
 
+
 // UPDATE ONE
 router.patch('/:id', getProduct, async (req, res) => {
     if(req.body.name != null){

@@ -1,4 +1,4 @@
-GET http://localhost:8000/users
+GET http://localhost:8000/products
 ###
 
 
@@ -8,18 +8,18 @@ GET http://localhost:6000/users/62135cf762a8a7339b77dacb
 ###
 
 
-POST http://localhost:8000/users
+POST http://localhost:8000/products
 Content-Type: application/json
 
 {
-        "username": "ndiphiwe",
-        "email": "bob@me.com",
-        "password": 12345
+        "title": "Filla-Stack-2",
+        "description": "Filla Sneakers",
+        "price": 400,
+        "image": "https://i.postimg.cc/hvXRq4Nq/FILA-Stack-2.jpg"
       }
 
 ###
-
-DELETE http://localhost:8000/products/621c96c5b3185db0ce60830d
+DELETE http://localhost:8000/products/621cb2d540f2067932694313
 
 ###
 
